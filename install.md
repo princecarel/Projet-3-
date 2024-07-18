@@ -42,8 +42,21 @@ Ce guide explique comment synchroniser GLPI avec Active Directory pour gérer le
 
 - Si le test est réussi, cliquez sur Ajouter pour enregistrer la configuration LDAP.
 
-### 8. Configurez l'importation des utilisateurs
+### 8. Configurez l'importation d'un utilisateur et autres utilisateurs
 
+- Accédez à Configuration -> Utilisateurs
+  Allez dans Configuration.
+  Sélectionnez Utilisateurs.
+- Importer les utilisateurs LDAP
+  Cliquez sur Importer les utilisateurs LDAP.
+- Sélectionnez l'annuaire LDAP
+  Choisissez l'annuaire LDAP configuré précédemment.
+- Définissez les filtres de recherche
+  Filtre de recherche d'utilisateur : (&(objectClass=user)(sAMAccountName=paul.perin)(ou=chercheur)).
+- Testez et importez
+  Cliquez sur Tester.
+  Si le test est réussi, cliquez sur Importer.
+  
 - Allez dans Configuration -> Users.
 - Cliquez sur Importer les utilisateurs LDAP.
 - Sélectionnez l'annuaire LDAP configuré précédemment.
